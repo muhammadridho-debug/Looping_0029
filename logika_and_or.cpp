@@ -20,5 +20,21 @@ int main() {
     }
 
     cout << "Status kelulusan (OR) = " << status << ", dengan nilai rata rata = " << rerata << endl;
+
+    cout << "\n--- LOGIKA AND ---" << endl;
+    cout << "Masukkan nilai Matematika = ";
+    cin >> nilM;
+    cout << "Masukkan nilai Bahasa Inggris = ";
+    cin >> nilB;
+    
+    rerata = (nilM + nilB) / 2;
+
+    if ((rerata >= 60) && (nilM >= 70)) {
+        status = "Lulus";
+    } else {
+        status = "Tidak lulus";
+    }
+
+    cout << "Status kelulusan (AND) = " << status << ", dengan nilai rata rata = " << rerata << endl;
     return 0;
 }
